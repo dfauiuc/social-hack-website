@@ -9,7 +9,7 @@ const Content = ({ styles }) => {
         height: "auto",
         right: 0,
         top: "50%",
-        left: "25%",
+        left: "20%",
         transform: "translate(-50%, -50%)",
     };
 
@@ -74,7 +74,7 @@ const Content = ({ styles }) => {
         marginLeft: "70%",
         transform: "translate(-50%, -50%)",
         fontFamily: 'GothamMedium',
-        width: "55%"
+        width: "50%"
     };
 
     const redColor = {
