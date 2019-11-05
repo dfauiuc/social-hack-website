@@ -2,7 +2,7 @@
   "name": "socialhackillinois",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dfauiuc.github.io/social-hack-website",
+  "homepage": "https://socialhackillinois.com/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.11.0",
