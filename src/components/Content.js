@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "./both.png";
+import AnimatedLogo from "./Animate.gif"
 import Taco from "./taco.gif";
 import WhiteOutlineDFA from "./DFAIcon.png";
 import { relative } from "path";
@@ -101,7 +102,7 @@ const Content = ({ styles }) => {
 
     return [
         <div style = {headerStyle}>
-            <img style = {logoStyle} src={Logo} alt="website logo" />
+            <img style = {logoStyle} src={AnimatedLogo} alt="website logo" />
 
             <div style = {titleStyle}>
                 Social Hack
