@@ -133,16 +133,18 @@ const Content = ({ styles }) => {
                 <span style = {yellowColor}> Social Hack </span> is a conference hosted by
                 <span style = {redColor}> Design for America at the University of Illinois at Urbana-Champaign </span>
                 that focuses on how we can approach
-                <span style = {yellowColor}> climate change </span> and
-                <span style = {yellowColor}> sustainability </span> from a
+                <span style = {yellowColor}> climate change </span>
+                from a
                 <span style = {yellowColor}> human centered </span> perspective.
             </div>
 
             <div style = {heading4Style}>
-                By the end of the conference, student teams will have presented their ideas to judges,
-                ranging from professors on campus to Chicago based design firms,
-                out their ideas after the conference with guidance from Design for America
-                mentors and campus/community partners.
+                Teams will learn the design process to tackle specific areas of climate change
+                that affect our community. 
+                By the end of the conference, students will present their prototypes to 
+                professors, local companies, and Chicago based firms.
+                Winners will receive the resources to implement their ideas
+                with guidance from DFA mentors and community partners.
             </div>
         </div>,
 
