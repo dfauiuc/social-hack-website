@@ -117,7 +117,7 @@ const Content = ({ styles }) => {
             </div>
 
             <div style = {heading1Style}>
-                not for our community
+                not for the community
             </div>
 
             <div style = {heading2Style}>
