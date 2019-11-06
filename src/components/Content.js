@@ -27,9 +27,9 @@ const Content = ({ styles }) => {
     const titleStyle = {
         paddingTop: 30,
         fontFamily: 'GothamBlack',
-        fontSize: "4.5vw",
+        fontSize: "4.8vw",
         textAlign: "center",
-        color: styles.lightGreen(1)
+        color: styles.darkYellow(1)
 
     };
 
@@ -46,14 +46,14 @@ const Content = ({ styles }) => {
         fontFamily: 'GothamMedium',
         fontSize: "2.5vw",
         textAlign: "center",
-        color: styles.darkYellow(1),
+        color: styles.dustyRose(1),
         paddingTop: 20,
     };
 
     const heading2aStyle = {
         position: "relative",
         paddingTop: 15,
-        fontSize: "2vw",
+        fontSize: "2.3vw",
         fontFamily: 'GothamBlack',
         color: styles.dustyRose(1)
     };
@@ -61,9 +61,9 @@ const Content = ({ styles }) => {
     const heading3Style = {
         position: "relative",
         paddingTop: 15,
-        fontSize: "2vw",
+        fontSize: "2.3vw",
         color: styles.lightGreen(1),
-        lineHeight: "2.2vw",
+        lineHeight: "2.5vw",
     };
 
     const heading4Style = {
@@ -96,8 +96,12 @@ const Content = ({ styles }) => {
         marginLeft: "auto",
     };
 
-    const redColor = {
+    const yellowColor = {
         color: styles.darkYellow(1),
+    };
+
+    const redColor = {
+        color: styles.lightYellow(1),
     };
 
     return [
@@ -126,12 +130,12 @@ const Content = ({ styles }) => {
                 Led by students, for students.
             </div>
             <div style = {heading3Style}>
-                <span style = {redColor}> Social Hack </span> is a conference at the
-                <span style = {redColor}> University of Illinois at Urbana-Champaign </span>
+                <span style = {yellowColor}> Social Hack </span> is a conference hosted by
+                <span style = {redColor}> Design for America at the University of Illinois at Urbana-Champaign </span>
                 that focuses on how we can approach
-                <span style = {redColor}> climate change </span> and
-                <span style = {redColor}> sustainability </span> from a
-                <span style = {redColor}> human centered </span> perspective.
+                <span style = {yellowColor}> climate change </span> and
+                <span style = {yellowColor}> sustainability </span> from a
+                <span style = {yellowColor}> human centered </span> perspective.
             </div>
 
             <div style = {heading4Style}>
