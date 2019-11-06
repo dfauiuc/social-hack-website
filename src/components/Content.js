@@ -46,7 +46,7 @@ const Content = ({ styles }) => {
         fontFamily: 'GothamMedium',
         fontSize: "2.5vw",
         textAlign: "center",
-        color: styles.dustyRose(1),
+        color: styles.darkGreen(1),
         paddingTop: 20,
     };
 

@@ -9,12 +9,12 @@ class App extends Component {
 
   render() {
     const styles = {
-      black: (opacity = 1) => `rgba(16, 23, 26, ${opacity})`,
-      lightGreen: (opacity = 1) => `rgba(106, 146, 113, ${opacity})`,
+      black: (opacity = 1) => `rgba=(16, 23, 26, ${opacity})`,
+      lightGreen: (opacity = 1) => `rgba(66, 115, 71, ${opacity})`,
       darkGreen: (opacity = 1) => `rgba(0, 51, 47, ${opacity})`,
       lightYellow: (opacity = 1) => `rgba(251, 243, 211, ${opacity})`,
       darkYellow: (opacity = 1) => `rgba(230, 178, 43, ${opacity})`,
-      dustyRose: (opacity = 1) => `rgba(249, 76, 93, ${opacity})`,
+      dustyRose: (opacity = 1) => `rgba(146, 20, 44, ${opacity})`,
 
     };
 
