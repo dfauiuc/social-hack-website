@@ -43,10 +43,10 @@ const Content = ({ styles }) => {
     };
 
     const heading2Style = {
-        fontFamily: 'GothamMedium',
+        fontFamily: 'GothamBlack',
         fontSize: "2.5vw",
         textAlign: "center",
-        color: styles.darkGreen(1),
+        color: styles.dustyRose(1),
         paddingTop: 20,
     };
 
