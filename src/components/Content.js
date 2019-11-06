@@ -62,7 +62,7 @@ const Content = ({ styles }) => {
         position: "relative",
         paddingTop: 15,
         fontSize: "2.3vw",
-        color: styles.lightGreen(1),
+        color: styles.darkGreen(1),
         lineHeight: "2.5vw",
     };
 

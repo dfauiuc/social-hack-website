@@ -11,10 +11,10 @@ class App extends Component {
     const styles = {
       black: (opacity = 1) => `rgba(16, 23, 26, ${opacity})`,
       lightGreen: (opacity = 1) => `rgba(106, 146, 113, ${opacity})`,
-      darkGreen: (opacity = 1) => `rgba(3, 71, 68, ${opacity})`,
+      darkGreen: (opacity = 1) => `rgba(0, 51, 47, ${opacity})`,
       lightYellow: (opacity = 1) => `rgba(251, 243, 211, ${opacity})`,
-      darkYellow: (opacity = 1) => `rgba(209, 173, 43, ${opacity})`,
-      dustyRose: (opacity = 1) => `rgba(226, 91, 93, ${opacity})`,
+      darkYellow: (opacity = 1) => `rgba(230, 178, 43, ${opacity})`,
+      dustyRose: (opacity = 1) => `rgba(249, 76, 93, ${opacity})`,
 
     };
 
@@ -22,7 +22,7 @@ class App extends Component {
     return (
         <div
             style={{
-              backgroundColor: styles.darkGreen(1),
+              backgroundColor: styles.lightGreen(1),
               minHeight: "100vh",
               position: "relative"
             }}
