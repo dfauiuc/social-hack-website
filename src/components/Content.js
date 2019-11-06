@@ -1,5 +1,8 @@
 import React from "react";
 import Logo from "./both.png";
+import Taco from "./taco.gif";
+import WhiteOutlineDFA from "./DFAIcon.png";
+import { relative } from "path";
 
 const Content = ({ styles }) => {
 
@@ -30,19 +33,20 @@ const Content = ({ styles }) => {
     };
 
     const heading1Style = {
+        position: relative,
         fontFamily: 'GothamMedium',
         fontSize: "2vw",
         textAlign: "center",
-        color: styles.lightYellow(1)
-
+        color: styles.lightYellow(1),
+        paddingTop: 20,
     };
 
     const heading2Style = {
         fontFamily: 'GothamMedium',
-        fontSize: "2vw",
+        fontSize: "2.5vw",
         textAlign: "center",
         color: styles.darkYellow(1),
-
+        paddingTop: 20,
     };
 
     const heading2aStyle = {
@@ -58,6 +62,7 @@ const Content = ({ styles }) => {
         paddingTop: 15,
         fontSize: "2vw",
         color: styles.lightGreen(1),
+        lineHeight: "2.2vw",
     };
 
     const heading4Style = {
@@ -66,6 +71,7 @@ const Content = ({ styles }) => {
         fontFamily: 'GothamMedium',
         color: styles.lightYellow(1),
         fontSize: "1.5vw",
+        lineHeight: "1.7vw",    
     };
 
     const bodyParagraphStyle = {
@@ -75,6 +81,18 @@ const Content = ({ styles }) => {
         transform: "translate(-50%, -50%)",
         fontFamily: 'GothamMedium',
         width: "50%"
+    };
+
+    const DFAIconContainerStyle = {
+        position: "fixed",
+        bottom: "1vw",
+        left: "95%",
+        width: "20%",
+    };
+
+    const DFAIconStyle = {
+        width: "20%",
+        marginLeft: "auto",
     };
 
     const redColor = {
@@ -89,9 +107,13 @@ const Content = ({ styles }) => {
                 Social Hack
             </div>
 
-            <p style = {heading1Style}>
-                designing with, not for the community
-            </p>
+            <div style = {heading1Style}>
+                designing with,
+            </div>
+
+            <div style = {heading1Style}>
+                not for the community
+            </div>
 
             <div style = {heading2Style}>
                 March 2020
@@ -118,6 +140,12 @@ const Content = ({ styles }) => {
                 mentors and campus/community partners.
             </div>
         </div>,
+
+        <div style = {DFAIconContainerStyle}>
+            <a style={{display: "table-cell"}} href="https://dfaillinois.com" target="_blank">
+                <img style = {DFAIconStyle} src={WhiteOutlineDFA} alt="website logo" />
+            </a>
+        </div>
     ]
 };
 
