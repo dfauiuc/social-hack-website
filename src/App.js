@@ -23,11 +23,11 @@ class App extends Component {
         <div
             style={{
               backgroundColor: styles.lightGreen(1),
-              minHeight: "100vh",
-              position: "relative"
+              minHeight: "100%",
+              position: "relative",
             }}
         >
-          <Content styles={styles} />
+          <Content styles={styles}/>
         </div>
     );
   }
