@@ -19,7 +19,7 @@ const Content = ({ styles }) => {
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
-        alignItems: "center",  
+        alignItems: "center",
         paddingTop: "100px",
         paddingBottom: "10vw",
     }
@@ -44,6 +44,8 @@ const Content = ({ styles }) => {
         fontFamily: 'GothamMedium',
         backgroundColor: styles.dustyRose(1),
         marginTop: "5vw",
+        transform: "matrix(1, 0, 0, 1, 0, 0)",
+        cursor: "pointer",
     };
 
     const logoStyle = {
@@ -166,7 +168,7 @@ const Content = ({ styles }) => {
     const  subTitle1Style = {
         fontSize: "5vw",
         fontFamily: 'GothamBlack',
-        color: styles.darkYellow(1),
+        color: styles.lightGreen(1),
     }
 
     const  subTitle2Style = {
@@ -282,12 +284,9 @@ const Content = ({ styles }) => {
                     Led by students, for students.
                 </div>
                 <div style = {heading3Style}>
-                    <span style = {yellowColor}> Social Hack </span> is a conference hosted by
+                    Social Hack is a conference hosted by
                     <span style = {redColor}> Design for America at the University of Illinois at Urbana-Champaign </span>
-                    that focuses on how we can approach
-                    <span style = {yellowColor}> climate change </span>
-                    from a
-                    <span style = {yellowColor}> human centered </span> perspective.
+                    that focuses on how we can approach climate change from a human centered perspective.
                 </div>
 
                 <div style = {heading4Style}>
