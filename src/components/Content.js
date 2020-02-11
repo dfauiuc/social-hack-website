@@ -25,7 +25,7 @@ const Content = ({ styles }) => {
 
     const headerStyle = {
         display: "inline-block",    
-        maxWidth: "60%",
+        maxWidth: "%",
         //paddingRight: "20px",
         margin: "0.5em",
     };
@@ -114,6 +114,15 @@ const Content = ({ styles }) => {
         alignItems: "center", 
     }
 
+    const HostSection = {
+        position: "relative",
+        marginTop: "15vw",
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        alignItems: "center", 
+    }
+
     const SponsorSection = {
         position: "relative",
         marginTop: "20%",
@@ -125,7 +134,7 @@ const Content = ({ styles }) => {
 
     const ContactSection = {
         position: "relative",
-        marginTop: "20%",
+        marginTop: "15%",
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
@@ -159,14 +168,14 @@ const Content = ({ styles }) => {
 
     const hostIconStyle = {
         display: "inline-block",   
-        maxWidth: "20%",
+        maxWidth: "15%",
         paddingLeft: "30px",
         paddingRight: "30px",
     };
 
     const hostContainer = {
         position: "relative",  
-        top: "50px",
+        top: "6vw",
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
@@ -175,7 +184,7 @@ const Content = ({ styles }) => {
     
     const partnerContainer = {
         position: "relative",  
-        top: "50px",
+        top: "6vw",
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
@@ -184,7 +193,7 @@ const Content = ({ styles }) => {
 
     const sponsorContainer = {
         position: "relative",  
-        top: "20px",
+        top: "6vw",
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
@@ -196,6 +205,7 @@ const Content = ({ styles }) => {
         maxWidth: "20%",
         paddingLeft: "10px",
         paddingRight: "10px",
+        paddingBottom: "15px",
     };
 
     const yellowColor = {
@@ -248,7 +258,7 @@ const Content = ({ styles }) => {
             </div>
         </div>,
 
-        <div style = {PartnerSection}>
+        <div style = {HostSection}>
             <div style = {subTitleStyle}>
                     Co-hosted by
             </div>
