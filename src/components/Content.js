@@ -8,6 +8,7 @@ import FuzzyMathLogo from "./White.png";
 import JaguarLogo from "./jaguarlogo.png";
 import SerraLogo from "./serraLogo.png";
 import NCSALogo from "./ncsalogo.jpg";
+import MediaQuery from 'react-responsive';
 import { relative } from "path";
 
 const Content = ({ styles }) => {
@@ -48,8 +49,7 @@ const Content = ({ styles }) => {
         fontSize: "75px",
         marginTop: "20px",  
         textAlign: "center",
-        color: styles.darkYellow(1)
-
+        color: styles.darkYellow(1),
     };
 
     const heading1Style = {
@@ -91,6 +91,16 @@ const Content = ({ styles }) => {
         fontFamily: 'GothamMedium',
         color: styles.lightYellow(1),
         fontSize: "20px",
+    };
+
+    const heading5Style = {
+        position: "relative",
+        paddingTop: "15px",
+        paddingBottom: "45px",
+        fontFamily: 'GothamMedium',
+        color: styles.lightYellow(1),
+        fontSize: "2vw",
+        textAlign: "center",
     };
 
     const PartnerSection = {
@@ -164,11 +174,11 @@ const Content = ({ styles }) => {
     const sponsorContainer = {
         position: "relative",  
         top: "20px",
-        bottom: "0",
+        bottom: "0px",
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
-        alignItems: "center",  
+        alignItems: "center", 
     }
 
     const sponsorIconStyle = {
@@ -176,7 +186,6 @@ const Content = ({ styles }) => {
         maxWidth: "20%",
         paddingLeft: "10px",
         paddingRight: "10px",
-        paddingBottom: "50px",
     };
 
     const yellowColor = {
@@ -270,10 +279,17 @@ const Content = ({ styles }) => {
             <img style={sponsorIconStyle} src={SerraLogo} alt="Serra logo" />
         </div>,
 
-        <div style = {SponsorSection}>
-            <div style = {subTitle2Style}>  
+        <div>
+            <div style = {SponsorSection}>
+                <div style = {subTitleStyle}>
+                    Contact us
+                </div>
             </div>
-        </div>,
+
+            <div style = {heading5Style}>
+                    Email us at uiuc@designforamerica.com
+                </div>
+        </div>
     ]
 };
 

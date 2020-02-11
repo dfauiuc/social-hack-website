@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Content from "./components/Content";
+import { HashRouter, Route, Link } from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -7,7 +8,12 @@ class App extends Component {
     this.state = {};
   }
 
+  state = {
+    isMobile: false
+  }
+
   render() {
+
     const styles = {
       black: (opacity = 1) => `rgba=(16, 23, 26, ${opacity})`,
       lightGreen: (opacity = 1) => `rgba(88, 123, 127, ${opacity})`,
@@ -21,6 +27,7 @@ class App extends Component {
 
     return (
         <div
+          
             style={{
               backgroundColor: styles.lightGreen(1),
               minHeight: "100%",
