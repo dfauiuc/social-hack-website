@@ -1,9 +1,460 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design For America at UIUC</title>
+
+    <!--Bulma (0.7.2) Framework-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+    <!--Main Styles-->
+    <link rel="stylesheet" href="styles.css" />
+    <!--Fonts-->
+    <link rel="stylesheet" href="./Assets/fonts.css" />
+    <!--Carousel (Slick)-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!--Modal Animations (bulma-modal-fx)-->
+    <!--<link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />-->
+    <!--Calendar (FullCalendar)-->
+    <link rel="stylesheet" href="./fullcalendar-3.10.0/fullcalendar.min.css" />
+</head>
+<body>
+    <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="./Assets/Icons/DFA%20Wordmark_White.png" alt="Design For America at UIUC">
+            </a>
+            <div class="navbar-burger burger" data-target="navbarMobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarMobile" class="navbar-menu">
+            <div class="navbar-start">
+
+            </div>
+
+            <div class="navbar-end">
+                <a class="navbar-item" href="about.html">
+                    About
+                </a>
+                <a class="navbar-item" href="projects.html">
+                    Projects
+                </a>
+                <a class="navbar-item" href="events.html">
+                    Events
+                </a>
+                <a class="navbar-item" href="members-encrypted.html">
+                    Members
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero heroMain">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-desktop">
+                    <div class="column is-four-fifths">
+                        <img src="./Assets/Icons/DFA_UIUC%20logo-small.png" style="height: 75px; margin-bottom: 50px">
+                        <h1 class="title has-text-white is-size-1-mobile" style="font-weight: 600; font-size: 3.5rem;">Design for Humans, <br>by Humans</h1>
+                        <br>
+                        <h2 class="subtitle has-text-info is-size-4 is-size-5-mobile">University of Illinois at Urbana-Champaign</h2>
+<!--                    <h2 class="subtitle has-text-white is-size-5 is-size-6-mobile">Announcement</h2>-->
+                    </div>
+                </div>
+                <br><br>
+                <div class="buttons">
+<!--                    <a class="button is-rounded is-primary is-inverted is-outlined" href="https://form.jotform.com/82308932042149">Apply Today</a>-->
+                    <a class="button is-rounded is-primary is-inverted is-outlined" href="https://form.jotform.com/82308932042149">Apply Today!</a>
+                    <a class="button is-rounded is-primary is-inverted is-outlined" href="">Get Our Newsletter</a>
+                    <a class="button is-rounded is-primary is-inverted is-outlined" href="events.html">Upcoming Events</a>
+                    <a class="button is-rounded is-primary is-inverted is-outlined" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6S552XP4MN6YU&source=url">Support Us!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="margin-bottom: 15px">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-four-fifths">
+                    <h1 class="subtitle has-text-primary sectionHeader">ABOUT US</h1>
+                    <br>
+                    <h1 class="title has-text-info is-size-2">We are a national network of college students using design-thinking for social good. We are passionate.</h1>
+                    <p class="is-size-5 is-size-6-mobile">Design for America at University of Illinois Urbana-Champaign is a registered 501(c)3 non-profit that focuses on the human-centered design process. Our studio is part of a larger award-winning national network of passionate creators & innovators revolutionizing the way university students engage with & improve the world around us. We seek to build interdiscplinary teams, which means we are open to students of all majors. Anyone interested in design, innovation, entrepreneurship, or just making a difference can help us tackle a wide variety of challenges.</p>
+                    <br>
+                    <a class="is-size-5" href="about.html">Learn More  <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section projectSpotlight">
+        <h1 class="subtitle has-text-info has-text-centered sectionHeader">PROJECT SPOTLIGHT</h1>
+        <br>
+        <div class="mycarousel">
+            <div class="projectSpotlightProject">
+                <div class="projectSpotlightCard">
+                    <header class="card-header">
+                        <figure class="image">
+                            <img src="https://i2.wp.com/designforamerica.com/wp-content/uploads/2018/12/IMG_9514.jpg?w=2400">
+                        </figure>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <a href="http://designforamerica.com/2018/12/18/humana-and-dfa-reimagine-healthcare-for-senior-patients/"><h1 class="is-size-3 is-size-4-mobile">Humana National Project</h1></a>
+                            <p class="is-size-5 is-size-6-mobile">National sponsored project with Humana, reimagining healthcare for senior patients.</p>
+                            <a class="is-size-5" href="http://designforamerica.com/2018/12/18/humana-and-dfa-reimagine-healthcare-for-senior-patients/">Learn More  <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectSpotlightProject">
+                <div class="projectSpotlightCard">
+                    <header class="card-header">
+                        <figure class="image">
+                            <img src="./Assets/Photos/DFA_SallyRyan_Day2_159.jpg">
+                        </figure>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <a href="projects.html"><h1 class="is-size-3 is-size-4-mobile">YMCA National Project</h1></a>
+                            <p class="is-size-5 is-size-6-mobile">National sponsored project addressing recruiting and retaining lifeguards for safer communities.</p>
+                            <a class="is-size-5" href="http://designforamerica.com/2018/11/21/5-dfa-teams-to-help-ymca-shape-the-lifeguard-recruitment-and-retention-this-spring-apply-today/">Learn More  <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectSpotlightProject">
+                <div class="projectSpotlightCard">
+                    <header class="card-header">
+                        <figure class="image">
+                            <img src="./Assets/Photos/IMG_0890.JPG">
+                        </figure>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="is-size-3 is-size-4-mobile">Food Security for College Students</h1>
+                            <p class="is-size-5 is-size-6-mobile">This a national sponsored project with Compass Groups, a huge hospitality and food services company, addressing food insecurity among college students.</p>
+                            <a class="is-size-5" href="http://designforamerica.com/2018/12/13/5-dfa-teams-to-help-compass-group-tackle-food-insecurity-on-college-campuses/">Learn More  <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectSpotlightProject">
+                <div class="projectSpotlightCard">
+                    <header class="card-header">
+                        <figure class="image">
+                            <img src="./Assets/Photos/IMG_0805.JPG">
+                        </figure>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="is-size-3 is-size-4-mobile">Senior Financial Literacy Project</h1>
+                            <p class="is-size-5 is-size-6-mobile">Project in collaboration with Synchrony Financial and AARP. How can we utilize emerging technologies to improve financial literacy for senior citizens?</p>
+                            <a class="is-size-5" href="projects.html">Learn More  <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectSpotlightProject">
+                <div class="projectSpotlightCard">
+                    <header class="card-header">
+                        <figure class="image">
+                            <img src="./Assets/Photos/IMG_0855.jpg">
+                        </figure>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="is-size-3 is-size-4-mobile">Edison Project</h1>
+                            <p class="is-size-5 is-size-6-mobile">Project in collaboration with Edison Middle School. How can we help middle school boys identify problems within their own lives and move to resolve them independently? How can we better engage parents in their child's school experience?</p>
+                            <a class="is-size-5" href="projects.html">Learn More  <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section sectionTiles">
+        <div class="tile is-ancestor tileImage is-flex">
+            <div class="tile is-vertical is-parent">
+                <div class="tile is-child tileImageIndex image1"></div>
+            </div>
+            <div class="tile is-4 is-vertical is-parent">
+                <div class="tile is-child tileImageIndex image2"></div>
+                <div class="tile is-child tileImageIndex image3 is-hidden-mobile"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-three-quarters">
+                    <h1 class="subtitle has-text-primary sectionHeader">FIRST STEPS</h1>
+                    <br>
+                    <h1 class="title has-text-info is-size-2">Why Join Us?</h1>
+                    <h1 class="is-size-5">The first step is taking the initiative to engage. Our organization is composed of extraordinary students from a wide-range of majors. What will you gain when you join?</h1>
+                    <br>
+                    <a class="is-size-5" href="https://form.jotform.com/82308932042149">Apply Today!  <i class="fas fa-chevron-right"></i></a>
+                    <br><br>
+                </div>
+                <div class="column is-one-quarter is-hidden-mobile">
+                        <i class="far fa-edit is-pulled-right fa-8x"></i>
+                </div>
+            </div>
+            <div class="columns is-multiline is-variable is-6">
+                <div class="column is-half">
+                    <div class="box has-background-link has-text-white boxTiles">
+                        <i class="fas fa-user-graduate fa-5x"></i>
+                        <br><br>
+                        <h1 class="is-size-3 has-text-weight-semibold">Students</h1>
+                        <p class="is-size-5-tablet">DFA students come from all backgrounds and majors, but share an innovative and entrepreneurial spirit. DFA is an opportunity to develop yourself professionally, academically, and personally.</p>
+                    </div>
+                </div>
+                <div class="column is-half">
+                    <div class="box has-background-link has-text-white boxTiles">
+                        <i class="fas fa-chalkboard-teacher fa-5x"></i>
+                        <br><br>
+                        <h1 class="is-size-3 has-text-weight-semibold">Professionals</h1>
+                        <p class="is-size-5-tablet">This is an opportunity for professionals and faculty to work with passionate students, share your expertise, and try out new teaching methodologies.</p>
+                    </div>
+                </div>
+                <div class="column is-half">
+                    <div class="box has-background-link has-text-white boxTiles">
+                        <i class="fas fa-globe-americas fa-5x"></i>
+                        <br><br>
+                        <h1 class="is-size-3 has-text-weight-semibold">Community</h1>
+                        <p class="is-size-5-tablet">Community partners have the opportunity to work with DFA teams and to create new products or services for your benefactors!</p>
+                    </div>
+                </div>
+                <div class="column is-half">
+                    <div class="box has-background-link has-text-white boxTiles">
+                        <i class="fas fa-building fa-5x"></i>
+                        <br><br>
+                        <h1 class="is-size-3 has-text-weight-semibold">Sponsors</h1>
+                        <p class="is-size-5-tablet">We like to maintain strong relationships as well as network with our corporate sponsors who support us in our mission to design for a better world.</p>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half">
+                    <h1 class="subtitle has-text-primary sectionHeader">UPCOMING EVENTS</h1>
+                    <br>
+                    <i class="fas fa-calendar-alt fa-6x"></i>
+                    <br><br>
+                    <h1 class="is-size-5">
+                        Our application process has ended for the spring semester. Come learn about us at our public events or this fall on Quad Day!
+
+<!--                        We offer many events for our members, and several to the public. Come learn more about who we are and what we do at these events!-->
+                    </h1>
+                    <br>
+                    <a class="is-size-5" href="events.html">See More Events  <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="column is-half">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-four-fifths">
+                    <h1 class="subtitle has-text-primary sectionHeader">OPPORTUNITIES</h1>
+                    <br>
+                    <h1 class="title has-text-info is-size-2">Where can DFA take you?</h1>
+                    <h1 class="is-size-5">Our members are recognized for their excellence by earning internships and full-time offers from the best companies in the country in a wide variety of industries. Some of these companies include...</h1>
+                </div>
+                <div class="column is-one-fifth is-hidden-mobile">
+                    <i class="fas fa-rocket fa-8x"></i>
+                </div>
+            </div>
+            <div class="columns is-multiline is-flex" style="margin-top: 10px;">
+                <div class="column is-narrow">
+                    <figure class="image" style="width: 200px;">
+                    <img src="./Assets/Icons/Google.jpg">
+                    </figure>
+                    </div>
+                <div class="column is-narrow">
+                    <figure class="image" style="width: 200px;">
+                    <img src="./Assets/Icons/Facebook.jpg">
+                    </figure>
+                    </div>
+                <div class="column is-narrow">
+                    <figure class="image" style="width: 200px;">
+                    <img src="./Assets/Icons/Apple.jpg">
+                    </figure>
+                    </div>
+                <div class="column is-narrow">
+                    <figure class="image" style="width: 200px;">
+                    <img src="./Assets/Icons/Bosch.jpg">
+                    </figure>
+                    </div>
+                <div class="column is-narrow">
+                    <figure class="image" style="width: 200px;">
+                    <img src="./Assets/Icons/KimberlyClark.jpg">
+                    </figure>
+                    </div>
+                <div class="column is-narrow">
+                    <figure class="image" style="width: 200px;">
+                    <img src="./Assets/Icons/Chegg.jpg">
+                    </figure>
+                </div>
+                <div class="column is-narrow">
+                    <figure class="image" style="width: 200px;">
+                    <img src="./Assets/Icons/Infosys.jpg">
+                    </figure>
+                </div>
+                <div class="column is-narrow">
+                    <figure class="image" style="width: 200px;">
+                    <img src="./Assets/Icons/Vmware.jpg">
+                    </figure>
+                </div>
+                <div class="column is-narrow">
+                    <figure class="image" style="width: 200px;">
+                    <img src="./Assets/Icons/CroweHorwath.jpg">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Scripts-->
+    <!--Font Awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!--Main Scripts-->
+    <script src="script.js"></script>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Modal Animations (bulma-modal-fx)-->
+    <!--<script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>-->
+    <!--Calendar (FullCalendar)-->
+    <script src="./fullcalendar-3.10.0/fullcalendar.min.js"></script>
+    <script src="./fullcalendar-3.10.0/lib/moment.min.js"></script>
+    <script src="./fullcalendar-3.10.0/lib/jquery.min.js"></script>
+    <script src="./fullcalendar-3.10.0/fullcalendar.min.js"></script>
+    <script type='text/javascript' src='./fullcalendar-3.10.0/gcal.min.js'></script>
+    <!--Load FullCalendar-->
+    <script>
+        $(function() {
+
+        // page is now ready, initialize the calendar...
+
+            $('#calendar').fullCalendar({
+                // put your options and callbacks here
+                defaultView: 'listMonth',
+                header: false,
+                googleCalendarApiKey: 'AIzaSyA_hf_r57u0fxXBpJpxtUFwm3OIP7Ul0eY',
+                events: {
+                    googleCalendarId: 'designforamerica.com_fs6lojvtqvf0sa9212kcqj7210@group.calendar.google.com'
+                }
+            })
+        });
+    </script>
+    <!--Carousel (Slick) //Must place Slick scripts after FullCalendar scripts!-->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!--Slick Carousel Settings-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.mycarousel').slick({
+                arrows: true,
+                dots: false,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '400px',
+                prevArrow: '<a class="button slick-prev"><i class="fas fa-arrow-circle-left"></i></a>',
+                nextArrow: '<a class="button slick-next"><i class="fas fa-arrow-circle-right"></i></a>',
+                responsive: [
+                    {
+                        breakpoint: 1330,
+                        settings: {
+                            centerPadding: '250px',
+                        }
+                    },
+                    {
+                        breakpoint: 1000,
+                        settings: {
+                        centerPadding: '50px',
+                            arrows: false,
+                        }
+                    },
+                                        {
+                        breakpoint: 769,
+                        settings: {
+                        centerPadding: '50px',
+                            arrows: false,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <!--Load Slick Carousel-->
+    <script>
+        $(document).ready(function(){
+            var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
+         });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129806224-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129806224-1');
+    </script>
+</body>
+<footer class="has-text-centered has-text-primary">
+    <table style="width:100%; margin-top: 0px; margin-bottom: 0px">
+        <tr>
+            <td class="footerlineleft">
+                <hr noshade style="height:1.25px; color: #E84A27;background-color:#E84A27;">
+            </td>
+            <td style="width:4%; vertical-align: middle; font-size: 20px; text-align: center; color: #E84A27;">
+                &#9733
+            </td>
+            <td class="footerlineright">
+                <hr noshade style="height:1.25px; color: #E84A27;background-color:#E84A27;">
+            </td>
+        </tr>
+    </table>
+    <h1 class="is-size-4-tablet has-text-weight-bold">Design For America at UIUC</h1>
+    <h1 class="is-size-6-tablet has-text-weight-normal">A 501c(3) Non-Profit</h1>
+    <h1 class="is-size-6-tablet has-text-weight-normal">uiuc@designforamerica.com</h1>
+    <h1 class="is-size-6-tablet has-text-weight-normal">© 2019-2020</h1>
+    <br>
+    <a class="has-text-primary" href="https://www.instagram.com/dfaillinois/?hl=en">
+        <i class="fab fa-instagram fa-3x"></i>
+    </a>
+    <a class="has-text-primary" href="https://www.facebook.com/dfaillinois/">
+        <i class="fab fa-facebook fa-3x" style="margin-left: 25px; margin-right: 25px;"></i>
+    </a>
+    <a class="has-text-primary" href="https://twitter.com/dfaillinois?lang=en">
+        <i class="fab fa-twitter fa-3x"></i>
+    </a>
+    <br><br>
+    <h1 class="is-size-6-tablet has-text-weight-normal">
+        <a class="has-text-primary" href="/index.html">Home</a> |
+        <a class="has-text-primary" href="about.html">About</a> |
+        <a class="has-text-primary" href="projects.html" target="_top">Projects</a> |
+        <a class="has-text-primary" href="events.html" target="_top">Events</a> |
+        <a class="has-text-primary" href="members-encrypted.html">Members</a>
+    </h1>
+</footer>
 </html>
