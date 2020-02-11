@@ -21,6 +21,7 @@ const Content = ({ styles }) => {
         justifyContent: "center",
         alignItems: "center",  
         paddingTop: "100px",
+        paddingBottom: "10vw",
     }
 
     const headerStyle = {
@@ -36,6 +37,13 @@ const Content = ({ styles }) => {
         paddingLeft: "20px",
         fontFamily: 'GothamMedium',
         margin: "0.5em",
+    };
+
+    const StakeholderSection = {
+        display: "inline-block",    
+        fontFamily: 'GothamMedium',
+        backgroundColor: styles.dustyRose(1),
+        marginTop: "5vw",
     };
 
     const logoStyle = {
@@ -100,7 +108,7 @@ const Content = ({ styles }) => {
         paddingTop: "15px",
         paddingBottom: "45px",
         fontFamily: 'GothamMedium',
-        color: styles.lightYellow(1),
+        color: styles.dustyRose(1),
         fontSize: "2vw",
         textAlign: "center",
     };
@@ -116,7 +124,7 @@ const Content = ({ styles }) => {
 
     const HostSection = {
         position: "relative",
-        marginTop: "15vw",
+        marginTop: "10vw",
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
@@ -136,27 +144,60 @@ const Content = ({ styles }) => {
         position: "relative",
         marginTop: "15%",
         display: "flex",
-        flexWrap: "wrap",
+        flexWrap: "wrap",   
         justifyContent: "center",
         alignItems: "center", 
     }
 
-    const  subTitleStyle = {
-        fontSize: "3vw",
-        fontFamily: 'GothamBlack',
-        color: styles.dustyRose(1),
+    const FAQContainer = {
+        paddingTop: "10vw",
+        paddingBottom: "10vw    ",
+        display: "block",
+        backgroundColor: styles.lightYellow(1),
     }
 
-    const  subTitle1Style = {
-        fontSize: "3vw",
+    const  subTitleStyle = {
+        position: "absolute",
+        fontSize: "5vw",
         fontFamily: 'GothamBlack',
         color: styles.darkGreen(1),
     }
 
+    const  subTitle1Style = {
+        fontSize: "5vw",
+        fontFamily: 'GothamBlack',
+        color: styles.darkYellow(1),
+    }
+
     const  subTitle2Style = {
-        fontSize: "3vw",
+        fontSize: "5vw",
         fontFamily: 'GothamBlack',
         color: styles.lightYellow(1),
+    }
+
+    const  subTitle5Style = {
+        marginTop: "3vw",
+        fontSize: "5vw",
+        fontFamily: 'GothamBlack',
+        textAlign: "center",
+        color: styles.dustyRose(1),
+    }
+
+    const  questionStyle = {
+        marginTop: "2vw",
+        marginLeft: "10vw",
+        fontSize: "2.5vw",
+        fontFamily: 'GothamMedium',
+        color: styles.darkYellow(1),
+    }
+
+    const  answerStyle = {
+        marginTop: "2vw",
+        marginLeft: "10vw",
+        marginRight: "10vw",
+        fontSize: "2vw",
+        fontFamily: 'GothamMedium',
+        color: styles.darkGreen(1),
     }
 
     const partnerIconStyle = {
@@ -169,13 +210,14 @@ const Content = ({ styles }) => {
     const hostIconStyle = {
         display: "inline-block",   
         maxWidth: "15%",
+        paddingTop: "2vw",  
         paddingLeft: "30px",
         paddingRight: "30px",
     };
 
     const hostContainer = {
         position: "relative",  
-        top: "6vw",
+        top: "4vw",
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
@@ -198,6 +240,7 @@ const Content = ({ styles }) => {
         flexWrap: "wrap",
         justifyContent: "center",
         alignItems: "center", 
+        backgroundColor: styles.dustyRose(1),
     }
 
     const sponsorIconStyle = {
@@ -205,7 +248,7 @@ const Content = ({ styles }) => {
         maxWidth: "20%",
         paddingLeft: "10px",
         paddingRight: "10px",
-        paddingBottom: "15px",
+        paddingBottom: "9vw",
     };
 
     const yellowColor = {
@@ -258,53 +301,89 @@ const Content = ({ styles }) => {
             </div>
         </div>,
 
-        <div style = {HostSection}>
-            <div style = {subTitleStyle}>
-                    Co-hosted by
-            </div>
-        </div>,
-
-        <div style={hostContainer}>
-            <img style = {hostIconStyle} src={DFALogo} alt="DFA logo" />
-            <img style = {hostIconStyle} src={NCSALogo} alt="NCSA logo" />
-            <img style={hostIconStyle} src={FuzzyMathLogo} alt="Fuzzy Math logo" />
-        </div>,
-
-        <div style = {PartnerSection}>
-            <div style = {subTitle1Style}>
-                    Our Student Partners
-            </div>
-        
-        </div>,
-        
-        <div style={partnerContainer}>
-            <img style = {partnerIconStyle} src={VIPLogo} alt="VIP logo" />
-            <img style = {partnerIconStyle} src={SECSLogo} alt="SECS logo" />
-        </div>,
-
-        <div style = {SponsorSection}>
-            <div style = {subTitle2Style}>  
-                Our Sponsors
-            </div>
-        </div>,
-
-        <div style={sponsorContainer}>
-            <img style={sponsorIconStyle} src={SSCLogo} alt="SSC logo" />
-            <img style={sponsorIconStyle} src={FuzzyMathLogo} alt="Fuzzy Math logo" />
-            <img style={sponsorIconStyle} src={JaguarLogo} alt="Jaguar logo" />
-            <img style={sponsorIconStyle} src={SerraLogo} alt="Serra logo" />
-        </div>,
-
-        <div style = {ContactSection}>
+        <div style = {StakeholderSection}>
+            <div style = {HostSection}>
                 <div style = {subTitleStyle}>
-                    Contact us
+                    Co-hosted by
                 </div>
+            </div>
+
+            <div style={hostContainer}>
+                <img style = {hostIconStyle} src={DFALogo} alt="DFA logo" />
+                <img style = {hostIconStyle} src={NCSALogo} alt="NCSA logo" />
+                <img style={hostIconStyle} src={FuzzyMathLogo} alt="Fuzzy Math logo" />
+            </div>
+
+            <div style = {PartnerSection}>
+                <div style = {subTitle1Style}>
+                    Our Student Partners
+                </div>
+            </div>
+        
+            <div style={partnerContainer}>
+                <img style = {partnerIconStyle} src={VIPLogo} alt="VIP logo" />
+                <img style = {partnerIconStyle} src={SECSLogo} alt="SECS logo" />
+            </div>
+
+            <div style = {SponsorSection}>
+                <div style = {subTitle2Style}>  
+                    Our Sponsors
+                </div>
+            </div>
+
+            <div style={sponsorContainer}>
+                <img style={sponsorIconStyle} src={SSCLogo} alt="SSC logo" />
+                <img style={sponsorIconStyle} src={FuzzyMathLogo} alt="Fuzzy Math logo" />
+                <img style={sponsorIconStyle} src={JaguarLogo} alt="Jaguar logo" />
+                <img style={sponsorIconStyle} src={SerraLogo} alt="Serra logo" />
+            </div>
         </div>,
 
-        <div style = {heading5Style}>
-            Email us at uiuc@designforamerica.com
-        </div>
+        <div style = {FAQContainer}>
+            <div style = {subTitle5Style}>
+                FAQ
+            </div>
 
+            <div style = {questionStyle}>
+                Who can attend?
+            </div>
+
+            <div style = {answerStyle}>
+                Any student that attends the University of Illinois Urbana-Champaign.
+            </div>
+
+            <div style = {questionStyle}>
+                Where's this located?
+            </div>
+
+            <div style = {answerStyle}>
+                The conference will be hosted at the National Center for Supercomputing Applications.
+            </div>
+
+            <div style = {questionStyle}>
+                Does this cost anything?
+            </div>
+
+            <div style = {answerStyle}>
+                Nothing, this is free of charge! Food and swag will be included.
+            </div>
+
+            <div style = {questionStyle}>
+                Do I need to have any particular experience in design?
+            </div>
+
+            <div style = {answerStyle}>
+                No experience, but a passion for social impact is strongly recommended!
+            </div>
+
+            <div style = {questionStyle}>
+                Any other questions?
+            </div>
+
+            <div style = {answerStyle}>
+                Feel free to reach out to us at uiuc@designformamerica.com, we're happy to answer any other questions!
+            </div>
+        </div>
     ]
 };
 
