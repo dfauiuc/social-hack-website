@@ -25,14 +25,14 @@ const Content = ({ styles }) => {
 
     const headerStyle = {
         display: "inline-block",    
-        maxWidth: "48%",
+        maxWidth: "60%",
         //paddingRight: "20px",
         margin: "0.5em",
     };
 
     const bodyParagraphStyle = {
         display: "inline-block",    
-        maxWidth: "48%", 
+        maxWidth: "60%", 
         paddingLeft: "20px",
         fontFamily: 'GothamMedium',
         margin: "0.5em",
