@@ -26,8 +26,8 @@ const Content = ({ styles }) => {
     const headerStyle = {
         display: "inline-block",    
         maxWidth: "48%",
-        paddingRight: "20px",
-        margin: "1em",
+        //paddingRight: "20px",
+        margin: "0.5em",
     };
 
     const bodyParagraphStyle = {
@@ -35,11 +35,13 @@ const Content = ({ styles }) => {
         maxWidth: "48%", 
         paddingLeft: "20px",
         fontFamily: 'GothamMedium',
+        margin: "0.5em",
     };
 
     const logoStyle = {
         display: "block",
-        justifyContent: "50%",
+        justifyContent: "center",
+        alignItems: "center",
         margin: "auto",
         maxWidth: "60%",
     };
@@ -58,7 +60,7 @@ const Content = ({ styles }) => {
         fontSize: "30px",
         textAlign: "center",
         marginTop: "20px",  
-        color: styles.lightYellow(1),
+        color: styles.dustyRose(1),
     };
 
     const heading2Style = {
@@ -66,7 +68,7 @@ const Content = ({ styles }) => {
         fontSize: "45px",
         textAlign: "center",
         marginTop: "20px",  
-        color: styles.dustyRose(1),
+        color: styles.lightYellow(1),
     };
 
     const heading2aStyle = {
@@ -105,7 +107,7 @@ const Content = ({ styles }) => {
 
     const PartnerSection = {
         position: "relative",
-        marginTop: "150px",
+        marginTop: "20%",
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
@@ -114,7 +116,16 @@ const Content = ({ styles }) => {
 
     const SponsorSection = {
         position: "relative",
-        marginTop: "150px",
+        marginTop: "20%",
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        alignItems: "center", 
+    }
+
+    const ContactSection = {
+        position: "relative",
+        marginTop: "20%",
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
@@ -123,19 +134,19 @@ const Content = ({ styles }) => {
 
     const  subTitleStyle = {
         fontSize: "3vw",
-        fontFamily: 'GothamBold',
+        fontFamily: 'GothamBlack',
         color: styles.dustyRose(1),
     }
 
     const  subTitle1Style = {
         fontSize: "3vw",
-        fontFamily: 'GothamBold',
+        fontFamily: 'GothamBlack',
         color: styles.darkGreen(1),
     }
 
     const  subTitle2Style = {
         fontSize: "3vw",
-        fontFamily: 'GothamBold',
+        fontFamily: 'GothamBlack',
         color: styles.lightYellow(1),
     }
 
@@ -174,7 +185,6 @@ const Content = ({ styles }) => {
     const sponsorContainer = {
         position: "relative",  
         top: "20px",
-        bottom: "0px",
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
@@ -206,11 +216,7 @@ const Content = ({ styles }) => {
                 </div>
 
                 <div style = {heading1Style}>
-                    designing with,
-                </div>
-
-                <div style = {heading1Style}>
-                    not for, our community
+                    designing with, <br /> not for, our community
                 </div>
 
                 <div style = {heading2Style}>
@@ -279,17 +285,16 @@ const Content = ({ styles }) => {
             <img style={sponsorIconStyle} src={SerraLogo} alt="Serra logo" />
         </div>,
 
-        <div>
-            <div style = {SponsorSection}>
+        <div style = {ContactSection}>
                 <div style = {subTitleStyle}>
                     Contact us
                 </div>
-            </div>
+        </div>,
 
-            <div style = {heading5Style}>
-                    Email us at uiuc@designforamerica.com
-                </div>
+        <div style = {heading5Style}>
+            Email us at uiuc@designforamerica.com
         </div>
+
     ]
 };
 
