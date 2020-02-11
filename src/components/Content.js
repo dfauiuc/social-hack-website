@@ -44,8 +44,6 @@ const Content = ({ styles }) => {
         fontFamily: 'GothamMedium',
         backgroundColor: styles.dustyRose(1),
         marginTop: "5vw",
-        transform: "matrix(1, 0, 0, 1, 0, 0)",
-        cursor: "pointer",
     };
 
     const logoStyle = {
@@ -285,7 +283,7 @@ const Content = ({ styles }) => {
                 </div>
                 <div style = {heading3Style}>
                     Social Hack is a conference hosted by
-                    <span style = {redColor}> Design for America at the University of Illinois at Urbana-Champaign </span>
+                    <span style = {redColor} > Design for America at the University of Illinois at Urbana-Champaign </span>
                     that focuses on how we can approach climate change from a human centered perspective.
                 </div>
 
@@ -360,6 +358,14 @@ const Content = ({ styles }) => {
             </div>
 
             <div style = {questionStyle}>
+                What time is this?
+            </div>
+
+            <div style = {answerStyle}>
+                Saturday, April 18 from 9 AM - 8 PM and Sunday, April 19 from 10 AM - 5PM (we promise it's worth it!)
+            </div>
+
+            <div style = {questionStyle}>
                 Does this cost anything?
             </div>
 
@@ -372,7 +378,7 @@ const Content = ({ styles }) => {
             </div>
 
             <div style = {answerStyle}>
-                No experience, but a passion for social impact is strongly recommended!
+                No particular experience is required, but a passion for social impact is strongly recommended!
             </div>
 
             <div style = {questionStyle}>
