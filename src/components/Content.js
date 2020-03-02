@@ -8,6 +8,7 @@ import FuzzyMathLogo from "./White.png";
 import JaguarLogo from "./jaguarlogo.png";
 import SerraLogo from "./serraLogo.png";
 import NCSALogo from "./ncsalogo.jpg";
+import balsamiqLogo from "./balsamiq-logo-noborder-screen.png";
 import MediaQuery from 'react-responsive';
 import { relative } from "path";
 import { Button} from 'react-bootstrap';
@@ -271,8 +272,8 @@ const Content = ({ styles }) => {
     const sponsorIconStyle = {
         display: "inline-block",    
         maxWidth: "20%",
-        paddingLeft: "10px",
-        paddingRight: "10px",
+        paddingLeft: "20px",
+        paddingRight: "20px",
         paddingBottom: "9vw",
     };
 
@@ -364,6 +365,7 @@ const Content = ({ styles }) => {
                 <img style={sponsorIconStyle} src={FuzzyMathLogo} alt="Fuzzy Math logo" />
                 <img style={sponsorIconStyle} src={JaguarLogo} alt="Jaguar logo" />
                 <img style={sponsorIconStyle} src={SerraLogo} alt="Serra logo" />
+                <img style={sponsorIconStyle} src={balsamiqLogo} alt="balsamiq logo" />
             </div>
         </div>,
 
