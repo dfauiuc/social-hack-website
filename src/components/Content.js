@@ -10,6 +10,7 @@ import SerraLogo from "./serraLogo.png";
 import NCSALogo from "./ncsalogo.jpg";
 import MediaQuery from 'react-responsive';
 import { relative } from "path";
+import { Button} from 'react-bootstrap';
 
 const Content = ({ styles }) => {
 
@@ -26,8 +27,7 @@ const Content = ({ styles }) => {
 
     const headerStyle = {
         display: "inline-block",    
-        maxWidth: "%",
-        //paddingRight: "20px",
+        maxWidth: "60%",
         margin: "0.5em",
     };
 
@@ -61,6 +61,31 @@ const Content = ({ styles }) => {
         textAlign: "center",
         color: styles.darkYellow(1),
     };
+
+    const buttonContainer = {
+        position: "relative",
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        alignItems: "center",
+        paddingTop: "30px",
+    }
+
+    const buttonStyle = {
+        backgroundColor: styles.darkYellow(1),
+        color: styles.lightYellow(1),
+        borderRadius: "0.5em",
+        width: "600px",
+        height: "40px",
+        maxWidth: "70%",
+        fontSize: "20px",
+        fontFamily: 'GothamMedium',
+        flexWrap: "wrap",
+        justifyContent: "center",
+        display: "flex",
+        alignItems: "center",
+        textDecoration: "none",
+    }
 
     const heading1Style = {
         position: relative,
@@ -275,6 +300,12 @@ const Content = ({ styles }) => {
                 <div style = {heading2Style}>
                     April 18-19, 2020
                 </div>
+
+                <div style = {buttonContainer}>
+                    <a href="https://forms.gle/JE1SmWR7k59aE6Zu8" style = {buttonStyle} target="_blank">
+                        Register Here
+                    </a>
+                </div>       
             </div>
 
             <div style = {bodyParagraphStyle}>
