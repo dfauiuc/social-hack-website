@@ -301,12 +301,7 @@ const Content = ({ styles }) => {
                 <div style = {heading2Style}>
                     RESCHEDULED FOR FALL 2020
                 </div>
-
-                <div style = {buttonContainer}>
-                    <a href="https://forms.gle/JE1SmWR7k59aE6Zu8" style = {buttonStyle} target="_blank">
-                        Register Here
-                    </a>
-                </div>       
+    
             </div>
 
             <div style = {bodyParagraphStyle}>
