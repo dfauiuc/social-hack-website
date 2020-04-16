@@ -299,7 +299,7 @@ const Content = ({ styles }) => {
                 </div>
 
                 <div style = {heading2Style}>
-                    April 18-19, 2020
+                    RESCHEDULED FOR FALL 2020
                 </div>
 
                 <div style = {buttonContainer}>
